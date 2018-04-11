@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BootstrapReper/.idea/BootstrapReper.iml" filepath="$PROJECT_DIR$/../BootstrapReper/.idea/BootstrapReper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CV-Bootstrape/.idea/CV Bootstrape.iml" filepath="$PROJECT_DIR$/../CV-Bootstrape/.idea/CV Bootstrape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../header-vue/.idea/header-vue.iml" filepath="$PROJECT_DIR$/../header-vue/.idea/header-vue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../todomvc/.idea/todomvc.iml" filepath="$PROJECT_DIR$/../todomvc/.idea/todomvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vue.iml" filepath="$PROJECT_DIR$/.idea/vue.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ok </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script  src = "https://cdn.jsdelivr.net/npm/vue/dist/vue.js" ></script>
+  <script src="sc.js"></script>
+
+<style>
+  #app {
+    width: 40 40 40 40;
+    background-color: green;
+    margin-top: 30px;
+  }
+
+</style>
+</head>
+<body>
+  <div id="app"  v-show="success">
+    {{ message }}
+    <input type="checkbox" name="" value="success">
+
+    <button  v-on:click="close">clique pour disparaitre
+
+    </button>
+  </div>
+
+  <div id="app-2">
+  <span v-bind:title="message">
+  Passez votgre souris sur moi pendant quelque seconde pour voir
+  mon titre dynamique
+  </span>
+
+
+</div>
+
+    <div id="app-3">
+      <span v-if="vu"> Maintenant vous me voyez</span>
+
+    </div>
+
+    <div  id = "app-4" >
+       <ul>
+         <li v-for ="person in persons">
+         {{person}}
+        </li>
+      </ul>
+    </div>
+
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">faire le contraire</button>
+    </div>
+
+
+    <div id="app-6">
+      <p>{{ message }}</p>
+      <input v-model="message">
+    </div>
+
+
+
+<script type="text/javascript">
+var app = new Vue ({
+  el: '#app',
+  data: {
+    success : true,
+    message: 'Hello Vue!'
+  },
+  methods:{
+    close : function () {
+      this.success = false
+    }
+  }
+
+
+})
+
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    message: 'You loaded this page on ' + new Date().toLocaleString()
+  }
+})
+
+var ap3 = new Vue ({
+  el: '#app-3' ,
+  data: {
+    vu: true
+   }
+})
+
+var app4 = new Vue({
+  el: '#app-4',
+  data : {
+    persons: ['persone1','persone2','persone3']
+  }
+})
+
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'mohammed salah'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+
+var app6 = new Vue ({
+  el: '#app-6',
+  data : {
+    message : 'bonjoure tou l monde',
+  }
+})
+
+</script>
+
+
+</body>
+</html>
